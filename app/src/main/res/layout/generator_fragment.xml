@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.example.passwordgenerator.viewmodel.MainActivityViewModel" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginHorizontal="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/generator_fragment_welcome">
+        </TextView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/generator_fragment_vocabulary_til"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginEnd="5dp"
+                android:hint="@string/generator_fragment_vocabulary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/generator_fragment_vocabulary_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:text="@{viewmodel.preferences.vocabulary}"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/generator_fragment_length_til"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                android:hint="@string/generator_fragment_length">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/generator_fragment_length_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:text="@{Integer.toString(viewmodel.preferences.passwordLength)}"
+                    />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/generator_fragment_save_prefs"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_save_preferences"
+                android:layout_marginStart="5dp"
+                app:tint="@color/brand_color"
+                android:background="@null"
+                android:layout_gravity="center">
+
+            </ImageButton>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:id="@+id/generator_fragment_generate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:strokeColor="?attr/colorPrimary"
+                android:text="@string/generator_fragment_generate"
+                app:icon="@drawable/ic_generate_password"
+                app:iconTint="?attr/colorPrimary">
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:id="@+id/generator_fragment_archive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:strokeColor="?attr/colorPrimary"
+                android:text="@string/generator_fragment_archive"
+                app:icon="@drawable/ic_archive"
+                app:iconTint="?attr/colorPrimary">
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:id="@+id/generator_fragment_import"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:strokeColor="?attr/colorPrimary"
+                android:text="@string/generator_fragment_import"
+                app:icon="@drawable/ic_import"
+                app:iconTint="?attr/colorPrimary">
+            </com.google.android.material.button.MaterialButton>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</layout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ГенераторПаролей</string>
+    <string name="loading_fragment_loading_data">Загружаем данные...</string>
+    <string name="generator_fragment_welcome">Добро пожаловать в Генератор Паролей!</string>
+    <string name="generator_fragment_vocabulary">Используемые символы</string>
+    <string name="generator_fragment_length">Длина</string>
+    <string name="generator_fragment_generate">Сгенерировать</string>
+    <string name="generator_fragment_archive">Архив</string>
+    <string name="generator_fragment_import">Импорт</string>
+    <string name="generator_fragment_error">Пожалуйста, проверьте правильность ввода</string>
+    <string name="generator_fragment_prefs_saved">Настройки сохранены!</string>
+    <string name="generator_fragment_password_generated">Пароль сгенерирован!</string>
+    <string name="list_fragment_title">Списки паролей</string>
+    <string name="password_fragment_title">Пароли</string>
+    <string name="password_list_fragment_menu_export">Экспортировать</string>
+    <string name="password_list_fragment_menu_see_all">Посмотреть все</string>
+    <string name="password_fragment_all_passwords">Все пароли</string>
+    <string name="generated_passwords_list_name">Сгенерированные</string>
+    <string name="copied_password">Скопированный пароль</string>
+    <string name="password_grade_poor">Плохой</string>
+    <string name="password_grade_weak">Слабый</string>
+    <string name="password_grade_reasonable">Средний</string>
+    <string name="password_grade_good">Хороший</string>
+</resources>

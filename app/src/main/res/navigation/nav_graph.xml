@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loadingFragment">
+
+    <fragment
+        android:id="@+id/loadingFragment"
+        android:name="com.example.passwordgenerator.ui.LoadingFragment"
+        android:label="loading_fragment"
+        tools:layout="@layout/loading_fragment" >
+        <action
+            android:id="@+id/action_loadingFragment_to_generatorFragment"
+            app:destination="@id/generatorFragment"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/generatorFragment"
+        android:name="com.example.passwordgenerator.ui.GeneratorFragment"
+        android:label="generator_fragment"
+        tools:layout="@layout/generator_fragment" >
+        <action
+            android:id="@+id/action_generatorFragment_to_listFragment"
+            app:destination="@id/listFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.passwordgenerator.ui.PasswordListFragment"
+        android:label="list_fragment"
+        tools:layout="@layout/password_list_fragment" >
+        <action
+            android:id="@+id/action_listFragment_to_passwordFragment"
+            app:destination="@id/passwordFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/passwordFragment"
+        android:name="com.example.passwordgenerator.ui.PasswordFragment"
+        android:label="password_fragment"
+        tools:layout="@layout/password_fragment"
+        app:enterAnim="@anim/slide_in"
+        app:exitAnim="@anim/fade_out"
+        app:popEnterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/slide_out"/>
+</navigation>

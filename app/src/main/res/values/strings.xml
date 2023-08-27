@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">PasswordGenerator</string>
+    <string name="loading_fragment_loading_data">Loading data...</string>
+    <string name="generator_fragment_welcome">Welcome to PasswordGenerator!</string>
+    <string name="generator_fragment_vocabulary">Used symbols</string>
+    <string name="generator_fragment_length">Length</string>
+    <string name="generator_fragment_generate">Generate</string>
+    <string name="generator_fragment_archive">Archive</string>
+    <string name="generator_fragment_import">Import</string>
+    <string name="generator_fragment_error">Please check the input</string>
+    <string name="generator_fragment_prefs_saved">Settings saved!</string>
+    <string name="generator_fragment_password_generated">Password generated!</string>
+    <string name="list_fragment_title">Password lists</string>
+    <string name="password_fragment_title">Passwords</string>
+    <string name="password_list_fragment_menu_export">Export</string>
+    <string name="password_list_fragment_menu_see_all">See all</string>
+    <string name="password_fragment_all_passwords">All passwords</string>
+    <string name="generated_passwords_list_name">Generated</string>
+    <string name="copied_password">Copied password</string>
+    <string name="password_grade_poor">Poor</string>
+    <string name="password_grade_weak">Weak</string>
+    <string name="password_grade_reasonable">Reasonable</string>
+    <string name="password_grade_good">Good</string>
+</resources>

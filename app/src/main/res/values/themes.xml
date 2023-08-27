@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.PasswordGenerator" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_color</item>
+        <item name="colorPrimaryVariant">@color/brand_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="listItemCardBackgroundColor">@color/day_list_item_card_background_color</item>
+    </style>
+</resources>

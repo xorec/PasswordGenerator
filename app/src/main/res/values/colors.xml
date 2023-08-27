@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_red">#770000</color>
+    <color name="red">#CC0000</color>
+    <color name="yellow">#CCC900</color>
+    <color name="green">#1CCC00</color>
+    <color name="brand_color">#40A430</color>
+    <color name="night_brand_color">#327D26</color>
+    <color name="night_window_background_color">#171717</color>
+    <color name="day_list_item_card_background_color">#F7FFF6</color>
+    <color name="night_list_item_card_background_color">#132111</color>
+</resources>
